@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import rospy
 from test.msg import result
-from talker.srv import char, play
+from talker.srv import chat, play
 
 def chat_CB(data):
     #print("successful")
