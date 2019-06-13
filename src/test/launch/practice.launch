@@ -1,0 +1,7 @@
+<launch>
+
+	<include file="$(find xbot_bringup)/launch/xbot-u.launch">
+	</include>
+	<node name="publisher" pkg="test" type="publisher.py" />
+    <node name="subscriber" pkg="test" type="subscriber.py" />
+</launch>

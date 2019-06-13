@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import rospy
 from test.msg import result
-from talker.srv import char, play
+from xbot_talker.srv import chat, play
 
 def chat_CB(data):
     #print("successful")
@@ -12,9 +12,9 @@ def chat_CB(data):
         communicate.play_srv(False, 1, "", "error")
 
 class communicate():
-    def __init__(self):
-        self.chat_srv = rospy.ServiceProxy('/chat', chat)
-        self.play_srv = rospy.ServiceProxy('/play', play)
+    #def __init__(self):
+        chat_srv = rospy.ServiceProxy('/chat', chat)
+        play_srv = rospy.ServiceProxy('/play', play)
 
 def subscriber():
     rospy.init_node('test_sub')
