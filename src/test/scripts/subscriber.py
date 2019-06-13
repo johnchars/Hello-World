@@ -1,7 +1,11 @@
 #!/usr/bin/python
 import rospy
 from test.msg import result
+<<<<<<< HEAD:src/test/scripts/subscriber.py
 from xbot_talker.srv import chat, play
+=======
+from talker.srv import chat, play
+>>>>>>> ed6295d44982de2b1e36436f4b4ecb9693a8aa2a:test/scripts/subscriber.py
 
 def chat_CB(data):
     #print("successful")
